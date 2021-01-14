@@ -16,6 +16,12 @@
     </parameters>
 
     <services>
+        <defaults public="true" />
+
+        <service id="fos_elastica.command.populate" class="FOS\ElasticaBundle\Command\PopulateCommand">
+            <tag name="console.command" />
+        </service>
+
         <service id="fos_elastica.repository_manager" class="%fos_elastica.repository_manager.class%" />
 
         <service id="fos_elastica.alias_processor" class="%fos_elastica.alias_processor.class%" />
