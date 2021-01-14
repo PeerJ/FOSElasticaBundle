@@ -75,6 +75,11 @@ class ElasticaDataCollector extends DataCollector
         return $time;
     }
 
+    public function reset()
+    {
+        // TODO: Implement reset() method.
+    }
+
     /**
      * {@inheritdoc}
      */
